@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <style>
+    body{
+      font-family: arial, sans-serif;
+    }
+    table{
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 60%;
+    }
+    td, th {
+      border: 3px solid #6495ED;
+      padding: 8px;
+    }
+    th{
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: #ADD8E6;
+    }
+    tr:hover{
+      background-color: #1E90FF;
+      color: white:
+    }
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <title>MY Expanse Tracker</title>
+  </head>
+  <script src="C:\Users\yasha\OneDrive\שולחן העבודה\Works\javascript\JS\ExpanseTracker.js"></script>
+  <body>
+  <div class="Picking lines">
+  <p>
+    <h1> The Expanse Tracker</h1>
+  </p>
+    <p>
+      <form action="action">
+        <h5> Welcome to The Expanse Tracker.<br>
+        here you can add and follow your all purchases.<br><br>
+          Please choose your date:<br>
+          <input type="date" id = "purchese_date" </input><br><br>
+          Where did you Shop?<br>
+          <input type="text" placeholder="The shop.." maxlength="10" id ="person_shop"/> <br><br>
+          How Much did it cost?<br>
+          <input type="number" placeholder="How Much?" id ="price_number"><br>
+          <button type="button" id="add_button"/>Submit</button>
+          <button type="reset" value="Reset the form"/>Reset Here</button><br><br>
+        </h5>
+    <table>
+        <thead>
+        <tr>
+          <th>Date</th>
+          <th>Shop</th>
+          <th>Price</th>
+      </tr>
+    </thead>
+      <tbody id="tableData">
+      </tbody>
+    </table>
+    </p>
+    </div>
+
+  </body>
+</html>
